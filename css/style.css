@@ -39,11 +39,12 @@ body {
   cursor: pointer;
   transition: opacity 0.3s ease;
   text-align: center;
+  transition: background-color 0.4s ease;
 }
 
 .btn:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
 }
 
 .section-header {
@@ -166,7 +167,7 @@ body {
 }
 
 .main-nav a:hover {
-  opacity: 0.8;
+  color: var(--secondary-color);
 }
 
 .user-icon {
@@ -243,63 +244,69 @@ body {
 
 .sports-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .sport-card {
   position: relative;
-  display: block;
-  border-radius: 8px;
   overflow: hidden;
-  color: var(--text-light);
+  border-radius: 12px;
+  cursor: pointer;
   text-decoration: none;
-  aspect-ratio: 1/1;
+  color: inherit;
+  transition: transform 0.3s ease;
 }
 
 .sport-card-bg {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+/* Zoom suave ao passar o mouse */
 .sport-card:hover .sport-card-bg {
-  transform: scale (1.05);
+  transform: scale(1.05);
+  filter: brightness(0.9); /* escurece um pouco a imagem */
 }
 
+/* Overlay com degradê */
 .sport-card-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  padding: 24px;
+  width: 100%;
+  height: 50%;
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-}
-
-.sport-card-title {
+    to top,
+    rgba(58, 39, 83, 0),
+    transparent
+  ); /* transparente inicial */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: background 0.3s ease; /* transição suave do degradê */
+}
+
+.sport-card:hover .sport-card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(58, 39, 83, 0.6),
+    transparent
+  ); /* degradê roxo */
+}
+
+/* Título dentro do overlay */
+.sport-card-title {
   margin: 0;
-  font-family: var(--font-secondary);
-  font-weight: 700;
+  color: var(--text-light);
   font-size: 24px;
-  line-height: 1;
-}
-
-.sport-card-title img {
-  width: 13px;
-  height: 13px;
-  transition: transform 0.3s ease;
-}
-
-.sport-card:hover .sport-card-title img {
-  transform: translateX(5px);
+  display: flex;
+  align-items: end;
+  gap: 8px;
 }
 
 .bg-decorator-1,
@@ -367,12 +374,20 @@ body {
 .teacher-card-image-wrapper {
   position: relative;
   aspect-ratio: 1/1;
+  transition: transform 0.3s ease;
 }
 
 .teacher-card-img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.teacher-card-image-wrapper:hover .teacher-card-img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
 }
 
 .teacher-card-image-overlay {
@@ -487,16 +502,17 @@ body {
   color: var(--text-light);
   text-decoration: none;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
   text-align: center;
+  transition: background-color 0.4s ease;
 }
 
 .btn-ver-mais:hover {
-  opacity: 0.9;
-  transform: scale(1.05);
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
 }
 
 @media (max-width: 1200px) {
@@ -563,7 +579,7 @@ body {
 
 .testimonial-content blockquote {
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 28px;
   font-style: normal;
   margin: 0;
 }
@@ -572,6 +588,9 @@ body {
   font-weight: 600;
   font-style: italic;
   font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  margin-top: 60px;
 }
 
 @media (max-width: 1200px) {
@@ -663,8 +682,7 @@ body {
 
 .footer-nav a:hover,
 .footer-link:hover {
-  opacity: 0.8;
-  font-style: italic;
+  color: var(--secondary-color);
 }
 
 .footer-heading {
@@ -683,7 +701,7 @@ body {
 }
 
 .fa-brands:hover {
-  opacity: 0.8;
+  color: var(--secondary-color);
 }
 
 .footer-bottom {
