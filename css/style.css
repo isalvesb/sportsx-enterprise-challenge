@@ -312,7 +312,7 @@ body {
 .bg-decorator-1 {
   width: 257px;
   height: 257px;
-  top: 500px;
+  top: 450px;
   left: 5px;
   transform: rotate(-30deg);
   flex-shrink: 0;
@@ -321,8 +321,8 @@ body {
 .bg-decorator-2 {
   width: 380px;
   height: 380px;
-  top: 400px;
-  right: -50px;
+  top: 350px;
+  right: -27px;
   transform: rotate(-15deg);
   flex-shrink: 0;
 }
