@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #3a2753;
+  --secondary-color: #d2e524;
+  --accent-color: #674695;
+  --text-light: #ffffff;
+  --text-dark: #3a2753;
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Instrument Sans", sans-serif;
+  --font-logo: "Outfit", sans-serif;
+}
