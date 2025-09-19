@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports X</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.io.png" type="image/png" />
+
+    <!-- Chamada google fonts -->
+
+    <!-- fonte Instrument -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fonte Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Chamada FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Chamada CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/var.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="logo SportsX" class="logo-icon">
+                <div class="logo-text">
+                    <span class="logo-title">SportsX</span>
+                    <span class="logo-subtitle">Visibilidade que conecta</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#section-hero">Página inicial</a></li>
+                    <li><a href="esportes-descricao.html#section-sports">Esportes</a></li>
+                    <li><a href="#section-teachers">Professores e Parceiros</a></li>
+                    <li><a href="#section-testimonials">Comunidade</a></li>
+                    <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                    <li><a href="#" class="user-icon"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão menu hamburguer  -->
+            <button class="hamburguer" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    </header>
+
+    <!-- Título e barra de busca  -->
+    <section id="professors" class="professors-section">
+        <div class="container">
+            <h1 class="section-title-professors">Professores e Parceiros</h1>
+            <div class="search-container">
+                <p class="search-subtitle">+ de 450 professores avaliados com 5 estrelas</p>
+                <form action="" class="search-form">
+                    <input type="text" class="search-input" placeholder="Busque por um esporte ou localização">
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Professores  -->
+            <div class="professors-grid">
+
+                <!-- Leonardo Souza - Slackline  -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-leonardo-souza.png" alt="Leonardo Souza"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">Leonardo Souza</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Paranapiacaba - São
+                                Paulo</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count">(48 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Slackline</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Luana Santos - Capoeira -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-luana-santos.png" alt="Luana Santos"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">Luana Santos</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Lapa - Rio de Janeiro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count">(39 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Capoeira</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Davi Ramalho - Escalada  -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-davi-ramalho.png" alt="Davi Ramalho"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">Davi Ramalho</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Santos - São Paulo</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count"> (39 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Escalada</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Roberto Pires - Asa Delta  -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-asa-delta.png" alt="Roberto Pires"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">Roberto Pires</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Paranapiacaba - São Paulo
+                            </p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count">(97 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Asa Delta</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- Mariana Sakamoto - Corrida de trilha  -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-mariana-sakamoto.png" alt="Mariana Sakamoto"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">Mariana Sakamoto</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Ouro Preto - Minas
+                                Gerais</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count">(39 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Corrida de Trilha</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+
+                <!-- José Maria - Capoeira  -->
+                <article class="teacher-card">
+                    <div class="teacher-card-image-wrapper">
+                        <img src="images/card-img-professor-capoeira.png" alt="José Maria"
+                            class="teacher-card-img">
+                        <div class="teacher-card-image-overlay">
+                            <h4 class="teacher-name">José Maria</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Salvador - Bahia</p>
+                        </div>
+                    </div>
+                    <div class="teacher-card-body">
+                        <div class="teacher-card-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                            <span class="rating-count">(127 avaliações)</span>
+                        </div>
+                        <h5 class="teacher-sport">Capoeira</h5>
+                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
+                        <p class="teacher-card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                            recusandae quis consectetur, perspiciatis veniam itaque laborum nobis optio aperiam impedit!
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-ver-mais">
+                <a href="#" class="btn-ver-mais">Ver mais professores</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="section-footer" class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-column footer-logo-column">
+                <a href="#" class="logo">
+                    <img src="images/logo.png" alt="SportsX Logo Icon" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-title">SportsX</span>
+                        <span class="logo-subtitle">Visibilidade que conecta</span>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-column">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html#section-hero">Página inicial</a></li>
+                        <li><a href="esportes-descricao.html#section-sports">Esportes</a></li>
+                        <li><a href="#section-local">Onde praticar</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                        <li><a href="#section-testimonials">Comunidade</a></li>
+                        <li><a href="professores-e-parceiros.html#section-teachers">Professores e parceiros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <h6 class="footer-heading">Redes sociais</h6>
+                <div class="social">
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                </div><br>
+                <a href="mailito:contato@sportsx.com" class="footer-link">contato@sportsx.com</a>
+            </div>
+
+            <div class="container footer-bottom">
+                <p>Desenvolvido por alunos da FIAP - 1TWDOA</p>
+                <p>SportX © 2025 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

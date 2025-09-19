@@ -156,13 +156,13 @@ body {
   justify-content: space-around;
   width: 30px;
   height: 25px;
-  font-size: 24px;
+  font-size: 16px;
   background: var(--primary-color);
   border: none;
   color: var(--text-light);
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 1001;
 }
 
 .main-nav ul {
@@ -193,54 +193,52 @@ body {
 
 @media (max-width: 768px) {
   .hamburguer {
-    display: flex;
+    display: block;
   }
 
   .main-nav ul {
     display: none;
-    position: fixed;
-    top: 74px;
-    right: 0;
-    left: 0;
+    position: absolute;
+    top: 70px;
+    right: 20px;
     flex-direction: column;
-    gap: 0;
+    gap: 15px;
     background: var(--primary-color);
-    padding: 20px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    z-index: 99;
+    padding: 15px;
+    border-radius: 8px;
+  }
 
-    .main-nav ul.active {
-      display: flex;
-    }
+  .main-nav ul.active {
+    display: flex;
+  }
 
-    .main-nav li {
-      width: 100%;
-      text-align: center;
-    }
+  .main-nav li {
+    width: 100%;
+    text-align: center;
+  }
 
-    .main-nav a {
-      display: block;
-      padding: 15px 20px;
-      width: 100%;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
+  .main-nav a {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
 
-    .main-nav a:last-child {
-      border-bottom: none;
-    }
+  .main-nav a:last-child {
+    border-bottom: none;
+  }
 
-    /* Animação para menu hamburguer*/
-    .hamburguer.active .hamburguer-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
+  /* Animação para menu hamburguer*/
+  .hamburguer.active .hamburguer-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
 
-    .hamburguer.active .hamburguer-line:nth-child(2) {
-      opacity: 0;
-    }
+  .hamburguer.active .hamburguer-line:nth-child(2) {
+    opacity: 0;
+  }
 
-    .hamburguer.active .hamburguer-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px);
-    }
+  .hamburguer.active .hamburguer-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
   }
 }
 
@@ -557,6 +555,7 @@ body {
   gap: 10px;
   border-radius: 8px;
   margin: auto;
+  margin-bottom: 50px;
   background-color: var(--primary-color);
   color: var(--text-light);
   text-decoration: none;
@@ -816,6 +815,12 @@ ________________________________________________________________________________
   align-items: start;
 }
 
+.sport-visuals img {
+  width: 596px;
+  height: 396px;
+  flex-shrink: 0;
+}
+
 .sport-visuals h1 {
   font-size: 48px;
   font-weight: 600;
@@ -921,4 +926,93 @@ ________________________________________________________________________________
   gap: 20px;
   align-self: stretch;
   padding: 120px 0;
+}
+
+___________________________________________________________________________________________________________________________________________________
+
+/* CSS para a section:professors  */
+.professors-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.section-title-professors {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  margin-top: 120px;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.search-subtitle {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-light-gray);
+  border-radius: 28px;
+  padding: 4px;
+  width: 100%;
+  max-width: 486px;
+}
+
+.search-input {
+  display: flex;
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 20px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-button {
+  display: flex;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: 10px;
+  margin-right: 5px;
+}
+
+.search-button:hover {
+  background-color: var(--accent-color);
+}
+
+.professors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 56px 30px;
+  margin-bottom: 56px;
+  text-align: left;
 }
