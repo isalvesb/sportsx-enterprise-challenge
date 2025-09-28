@@ -803,6 +803,7 @@ body {
 ____________________________________________________________________________________________________________________________________________________
 
 /* CSS para a página de Esportes - descrição  */
+
 /* CSS para a section:sports-details  */
 .sport-details-section {
   padding: 80px 0;
@@ -1011,8 +1012,22 @@ ________________________________________________________________________________
 
 .professors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: 56px 30px;
   margin-bottom: 56px;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+
+  .search-subtitle {
+    font-size: 24px;
+  }
+
+  .professors-grid {
+    justify-items: center;
+  }
 }
