@@ -1012,7 +1012,7 @@ ________________________________________________________________________________
 
 .professors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 56px 30px;
   margin-bottom: 56px;
   text-align: left;
