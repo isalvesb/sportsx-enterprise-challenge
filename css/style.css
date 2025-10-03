@@ -946,7 +946,7 @@ ________________________________________________________________________________
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 40px;
-  margin-top: 120px;
+  margin-top: 80px;
   margin-left: 80px;
 }
 
@@ -1254,4 +1254,94 @@ ________________________________________________________________________________
   font-family: var(--font-secondary);
   font-size: 16px;
   color: var(--accent-color);
+}
+
+.overall-rating span {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+.overall-rating p {
+  margin: 0;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-author h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.review-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.review-item p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+.bottom-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .section-title-professors {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .professor-carousel {
+    gap: 8px;
+  }
+
+  .professor-card {
+    width: 280px;
+    height: 280px;
+  }
+
+  .info-block,
+  .reviews-section {
+    text-align: center;
+  }
+
+  .reviews-header {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
