@@ -800,8 +800,8 @@ body {
     gap: 16px;
   }
 }
-____________________________________________________________________________________________________________________________________________________
 
+____________________________________________________________________________________________________________________________________________________
 /* CSS para a página de Esportes - descrição  */
 
 /* CSS para a section:sports-details  */
@@ -879,9 +879,11 @@ ________________________________________________________________________________
 .tag .icon-group img:nth-child(1) {
   left: 0;
 }
+
 .tag .icon-group img:nth-child(2) {
   left: 11px;
 }
+
 .tag .icon-group img:nth-child(3) {
   left: 22px;
 }
@@ -945,6 +947,7 @@ ________________________________________________________________________________
   line-height: 1.2;
   margin-bottom: 40px;
   margin-top: 120px;
+  margin-left: 80px;
 }
 
 .search-container {
@@ -1012,7 +1015,7 @@ ________________________________________________________________________________
 
 .professors-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 56px 30px;
   margin-bottom: 56px;
   text-align: left;
@@ -1030,4 +1033,225 @@ ________________________________________________________________________________
   .professors-grid {
     justify-items: center;
   }
+}
+
+________________________________________________________________________________________________________________________________________________________
+/* CSS para a página perfil-completo  */
+
+.profile-section {
+  padding: 58px 0px 120px;
+}
+
+.profile-content-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.professor-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.professor-card {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.professor-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-light);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  z-index: 2;
+}
+
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.professor-name {
+  font-family: var(--font-secondary);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.professor-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 20px;
+}
+
+.sport-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.sport-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.sport-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.sport-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.tag.tag-dark {
+  background-color: var(--primary-color);
+}
+.tag.tag-light {
+  background-color: var(--accent-color);
+}
+
+.cta-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-top: 16px;
+  text-decoration: none;
+}
+
+.cta-link i {
+  transition: transform 0.3s ease, margin-left 0.3s ease;
+}
+
+.cta-link:hover {
+  color: var(--primary-color);
+}
+
+.cta-link:hover i {
+  transform: translateX(-5px);
+}
+
+.info-blocks {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+
+.info-block h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 12px;
+}
+
+.info-block p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.reviews-section {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.reviews-header h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.overall-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: var(--accent-color);
 }
