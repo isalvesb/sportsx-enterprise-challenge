@@ -14,3 +14,18 @@ hamburgerBtn.addEventListener("click", () => {
         hamburgerIcon.classList.add("fa-bars");
     }
 });
+
+
+// Inicializa o mapa centralizado em São Paulo
+const map = L.map('map').setView([-23.5505, -46.6333], 12);
+
+// Camada do OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Marcador de exemplo
+L.marker([-23.5505, -46.6333])
+    .addTo(map)
+    .bindPopup('<b>90 Graus Escalada</b><br>Academia de escalada')
+    .openPopup();

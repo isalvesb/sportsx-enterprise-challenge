@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports X</title>
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.io.png" type="image/png" />
+
+    <!-- Chamada google fonts -->
+
+    <!-- fonte Instrument -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fonte Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Chamada FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Chamada CSS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/var.css" />
+
+    <!-- Chamada Mapa LeaFlet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-sA+e2iYkOMQ1EoFz0Fj0rZzMI4zEbnGs4G6Z4cP6Yxw=" crossorigin="" />
+</head>
+
+
+<body>
+    <header class="site-header">
+        <div class="header-container container">
+            <a href="#" class="logo">
+                <img src="images/logo.webp" alt="logo SportsX" class="logo-icon">
+                <div class="logo-text">
+                    <span class="logo-title">SportsX</span>
+                    <span class="logo-subtitle">Visibilidade que conecta</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#section-hero">Página inicial</a></li>
+                    <li><a href="esportes.html#section-sports">Esportes</a></li>
+                    <li><a href="professores-e-parceiros.html#section-teachers">Professores e Parceiros</a></li>
+                    <li><a href="#section-testimonials">Comunidade</a></li>
+                    <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                    <li><a href="#" class="user-icon"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão menu hamburguer  -->
+            <button class="hamburguer" aria-label="Abrir menu de navegação">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+    </header>
+
+    <section id="map-search" class="map-search-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Onde praticar</h1>
+                <p class="search-subtitle">+ de 147 locais para você praticar seu esporte favorito</p>
+
+                <form action="" class="search-form">
+                    <input type="text" class="search-input" placeholder="Escalada São Paulo">
+                    <button type="submit" class="search-button">Buscar</button>
+                </form>
+            </div>
+
+            <div class="map-content-wrapper">
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+
+            </div>
+
+            <aside class="locations-list">
+                <article class="location-card">
+                    <h3 class="location-name">
+                        <i class="fa-solid fa-location-dot"></i>
+                        90 Graus Escalada
+                    </h3>
+
+                    <div class="location-rating">
+                        <div class="rating-score">
+                            <i class="fa-solid fa-star"></i>
+                            <span>5</span>
+                        </div>
+                        <span class="rating-reviews">(39 avaliações)</span>
+                    </div>
+
+                    <div class="location-details">
+                        <p>Academia de escalada</p>
+                        <p>Av. João Pedro Cardoso, 107</p>
+                        <p>Aberto - Fecha às 23h</p>
+                    </div>
+                </article>
+
+                <article class="location-card">
+                    <h3 class="location-name">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Fábrica Escalada (Vila Madalena)
+                    </h3>
+
+                    <div class="location-rating">
+                        <div class="rating-score">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                        <span class="rating-reviews">(144 avaliações)</span>
+                    </div>
+
+                    <div class="location-details">
+                        <p>Academia de escalada</p>
+                        <p>R. da Paz dos Lírios, 1978</p>
+                        <p>Aberto - Fecha às 23h</p>
+                    </div>
+                </article>
+            </aside>
+        </div>
+    </section>
+
+
+    <footer id="section-footer" class="site-footer">
+        <div class="container footer-main">
+            <div class="footer-column footer-logo-column">
+                <a href="#" class="logo">
+                    <img src="images/logo.webp" alt="SportsX Logo Icon" class="logo-icon">
+                    <div class="logo-text">
+                        <span class="logo-title">SportsX</span>
+                        <span class="logo-subtitle">Visibilidade que conecta</span>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-column">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#section-hero">Página inicial</a></li>
+                        <li><a href="esportes.html#section-sports">Esportes</a></li>
+                        <li><a href="#section-local">Onde praticar</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                        <li><a href="#section-testimonials">Comunidade</a></li>
+                        <li><a href="professores-e-parceiros.html#section-teachers">Professores e parceiros</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-column">
+                <h6 class="footer-heading">Redes sociais</h6>
+                <div class="social">
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                </div><br>
+                <a href="mailito:contato@sportsx.com" class="footer-link">contato@sportsx.com</a>
+            </div>
+
+            <div class="container footer-bottom">
+                <p>Desenvolvido por alunos da FIAP - 1TWDOA</p>
+                <p>SportsX © 2025 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-o9N1jLFu0t2xa0I3Ynbv2v1kVJ7zH7yo71P5bQf5G2Y=" crossorigin="">
+        </script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
