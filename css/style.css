@@ -1360,9 +1360,9 @@ ________________________________________________________________________________
 }
 
 .map-content-wrapper {
-  margin-top: 71px;
+  margin: 80px 100px 71px 75px;
   display: grid;
-  grid-template-columns: 615px 1fr;
+  grid-template-columns: 700px 1fr;
   gap: 75px;
   align-items: start;
 }
@@ -1402,6 +1402,7 @@ ________________________________________________________________________________
 }
 
 .location-name {
+  margin-left: 50px;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -1416,6 +1417,7 @@ ________________________________________________________________________________
 }
 
 .location-rating {
+  margin-left: 50px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -1442,6 +1444,7 @@ ________________________________________________________________________________
 }
 
 .location-details p {
+  margin-left: 50px;
   font-size: 16px;
   font-weight: 400;
   line-height: 2;

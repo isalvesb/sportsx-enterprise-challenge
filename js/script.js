@@ -19,13 +19,16 @@ hamburgerBtn.addEventListener("click", () => {
 // Inicializa o mapa centralizado em São Paulo
 const map = L.map('map').setView([-23.5505, -46.6333], 12);
 
-// Camada do OpenStreetMap
+// Camada de mapa base (OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Marcador de exemplo
+// Marcadores de exemplo
 L.marker([-23.5505, -46.6333])
     .addTo(map)
-    .bindPopup('<b>90 Graus Escalada</b><br>Academia de escalada')
-    .openPopup();
+    .bindPopup('<b>90 Graus Escalada</b><br>Academia de escalada');
+
+L.marker([-23.9637, -46.3333])
+    .addTo(map)
+    .bindPopup('<b>Praia do Gonzaga</b><br>Espaço para Slackline e Beach Tennis');
