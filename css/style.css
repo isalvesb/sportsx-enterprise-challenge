@@ -1476,3 +1476,234 @@ ________________________________________________________________________________
     line-height: 1.5;
   }
 }
+__________________________________________________________________________________________________________________________________________________________________________________
+
+/* CSS para Comunidade */
+
+/* CSS para Comunidade - COLE NO FINAL DO style.css */
+
+#communities-banner.communities-banner-section {
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  min-height: 406px;
+  width: 100%;
+}
+
+.communities-banner-container {
+  width: 100%;
+}
+
+.communities-banner-content {
+  padding: 60px 0;
+  width: 100%;
+}
+
+.communities-banner-content h1 {
+  font-family: var(--font-primary);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.communities-banner-content p {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.875;
+  max-width: 546px;
+}
+
+.communities-section {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 40px 0 54px;
+}
+
+.communities-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 442px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.communities-grid {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.community-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  width: 285px;
+}
+
+.community-card-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.community-card-text h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+.community-card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--wisteria);
+}
+
+.btn-join {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px 22px;
+  border-radius: 28px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.posts-section {
+  background-color: var(--text-light);
+  padding: 45px 0 118px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  color: var(--accent-color);
+  margin-bottom: 30px;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+  max-width: 909px;
+}
+
+.post-card {
+  background-color: var(--bg-light-gray);
+  border-radius: 16px;
+  padding: 22px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.post-time {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.post-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.post-content p {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--text-dark);
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 38px;
+  padding: 8px 13px;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.action-button.vote-button {
+  gap: 6px;
+}
+
+/* Media query para comunidade */
+@media (max-width: 768px) {
+  .communities-banner-section {
+    text-align: center;
+    min-height: 300px;
+  }
+
+  .communities-banner-content p {
+    margin: 0 auto;
+  }
+
+  .communities-grid {
+    gap: 40px;
+  }
+}
