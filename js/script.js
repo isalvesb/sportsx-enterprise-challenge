@@ -2,18 +2,20 @@ const hamburgerBtn = document.querySelector(".hamburguer");
 const hamburgerIcon = document.querySelector(".hamburguer i");
 const navMenu = document.querySelector(".main-nav ul");
 
-hamburgerBtn.addEventListener("click", () => {
+if (hamburgerBtn && hamburgerIcon && navMenu) {
+  hamburgerBtn.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 
     // Alterna o ícone para X
     if (hamburgerIcon.classList.contains("fa-bars")) {
-        hamburgerIcon.classList.remove("fa-bars");
-        hamburgerIcon.classList.add("fa-xmark");
+      hamburgerIcon.classList.remove("fa-bars");
+      hamburgerIcon.classList.add("fa-xmark");
     } else {
-        hamburgerIcon.classList.remove("fa-xmark");
-        hamburgerIcon.classList.add("fa-bars");
+      hamburgerIcon.classList.remove("fa-xmark");
+      hamburgerIcon.classList.add("fa-bars");
     }
-});
+  });
+}
 
 const track = document.querySelector(".testimonial-track");
 const prevBtn = document.querySelector(".carousel-btn.prev");
