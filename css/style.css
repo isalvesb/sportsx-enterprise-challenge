@@ -100,7 +100,7 @@ body {
   }
 }
 
-/* CSS para a section:header */
+/*----------------------------------------------- CSS para a section:header ------------------------------------------*/
 .site-header {
   background-color: var(--primary-color);
   padding: 7px 0;
@@ -242,7 +242,7 @@ body {
   }
 }
 
-/* CSS para a section:hero  */
+/* ============================================ Página Inicial ====================================================== */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/background-mulher-escalando.png);
@@ -291,7 +291,7 @@ body {
   }
 }
 
-/* CSS para a section:sports */
+/*------------------------------------------------ CSS para a section:sports -----------------------------------------*/
 .sports-section {
   padding: 120px 0;
   position: relative;
@@ -402,7 +402,7 @@ body {
   }
 }
 
-/* CSS para a section:teachers  */
+/*----------------------------------------- CSS para a section:teachers  ---------------------------------------------*/
 .teachers-section {
   margin: 0 auto;
   padding: 40px 20px;
@@ -589,15 +589,15 @@ body {
   }
 }
 
-/* CSS para a section:testimonials  */
+/*------------------------------------------- CSS para a section:testimonials  ---------------------------------------*/
 .testimonials-section {
   background-color: var(--primary-color);
   color: var(--text-light);
   padding: 120px 0;
 }
 
-.testimonials-section .section-title-principal,
-.testimonials-section .section-subtitle-principal {
+.testimonials-section .section-title,
+.testimonials-section .section-subtitle {
   color: var(--text-light);
 }
 
@@ -627,7 +627,7 @@ body {
 .testimonial-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .testimonial-rating {
@@ -646,9 +646,9 @@ body {
   font-weight: 600;
   font-style: italic;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 18px;
   letter-spacing: -0.2px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -672,7 +672,71 @@ body {
   }
 }
 
-/* CSS para a section:sponsor  */
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-slide {
+  display: flex;
+  justify-content: center; /* centraliza os dois cards juntos */
+  align-items: stretch;
+  min-width: 100%; /* cada slide ocupa toda a tela */
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  width: 45%; /* dois cards lado a lado */
+  max-width: 50%;
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center; /* imagem e texto alinhados na vertical */
+  gap: 20px;
+}
+
+.testimonial-person {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  text-align: left;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-primary, #674695);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  width: 35px;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* ----------------------------------------------- CSS para a section:sponsor ----------------------------------------*/
 .sponsor-section {
   padding: 120px 0;
   background-color: var(--text-light);
@@ -692,7 +756,7 @@ body {
   }
 }
 
-/* CSS para a section:footer  */
+/*------------------------------------------------ CSS para a section:footer  ----------------------------------------*/
 .site-footer {
   background-color: var(--primary-color);
   color: var(--text-light);
@@ -801,10 +865,9 @@ body {
   }
 }
 
-____________________________________________________________________________________________________________________________________________________
-/* CSS para a página de Esportes - descrição  */
+/* ========================================= Página Esporte-Descrição Sobre ==========================================*/
 
-/* CSS para a section:sports-details  */
+/*--------------------------------------- CSS para a section:sports-details ------------------------------------------*/
 .sport-details-section {
   padding: 80px 0;
 }
@@ -844,14 +907,14 @@ ________________________________________________________________________________
   margin-bottom: 76px;
 }
 
-.tag-container {
+.tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
 .tag {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 12px;
@@ -866,29 +929,39 @@ ________________________________________________________________________________
   gap: 4px;
 }
 
+.tag i {
+  width: 14px;
+  height: 14px;
+}
+
 .tag .icon-group {
   position: relative;
-  width: 60px;
+  width: 36px;
   height: 14px;
 }
 
 .tag.tag-adrenalina .icon-group {
-  width: 50px;
+  width: 32px;
 }
 
-.tag .icon-group img:nth-child(1) {
+.tag .icon-group i {
+  position: absolute;
+  top: 0;
+}
+
+.tag .icon-group i:nth-child(1) {
   left: 0;
 }
 
-.tag .icon-group img:nth-child(2) {
+.tag .icon-group i:nth-child(2) {
   left: 11px;
 }
 
-.tag .icon-group img:nth-child(3) {
+.tag .icon-group i:nth-child(3) {
   left: 22px;
 }
 
-.tag.tag-adrenalina .icon-group img:nth-child(2) {
+.tag.tag-adrenalina .icon-group i:nth-child(2) {
   left: 18px;
 }
 
@@ -903,7 +976,7 @@ ________________________________________________________________________________
   }
 }
 
-/* CSS para a section:teachers da página esportes  */
+/*--------------------------------- CSS para a section:teachers da página esportes -----------------------------------*/
 .teachers-grid-esportes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -931,9 +1004,9 @@ ________________________________________________________________________________
   padding: 120px 0;
 }
 
-___________________________________________________________________________________________________________________________________________________
+/* =========================================== Página Perfil-Professor ============================================== */
 
-/* CSS para a section:professors  */
+/*----------------------------------------- CSS para a section:professors ------------------------------------------- */
 .professors-section {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -961,7 +1034,7 @@ ________________________________________________________________________________
   color: var(--accent-color);
   font-weight: 600;
   font-size: 32px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: -2px;
 }
 
@@ -1039,8 +1112,9 @@ ________________________________________________________________________________
   }
 }
 
-________________________________________________________________________________________________________________________________________________________
-/* CSS para a página perfil-completo  */
+/* =============================================== Página Perfil-Completo =========================================== */
+
+/*--------------------------------------------------- CSS para perfil ------------------------------------------------*/
 
 .profile-section {
   padding: 58px 0px 120px;
@@ -1349,9 +1423,9 @@ ________________________________________________________________________________
     gap: 16px;
   }
 }
-_________________________________________________________________________________________________
 
-/* CSS para a página Onde Praticar  */
+/* =================================================== Página Onde Praticar ========================================= */
+
 .map-search-section {
   padding-top: 114px;
   padding-bottom: 144px;
@@ -1366,14 +1440,23 @@ ________________________________________________________________________________
   align-items: start;
 }
 
-/* --- Mapa Leaflet --- */
-.map-container {
-  position: relative;
+/* ------------------------------------------------- MAPA (Leaflet) ------------------------------------------------- */
+.map-container #map {
   width: 100%;
-  height: 500px; /* altura do mapa */
-  border-radius: 12px;
+  height: clamp(360px, 60vh, 640px); /* responsivo */
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.locations-list {
+  max-height: clamp(360px, 60vh, 640px);
+  overflow: auto;
+}
+
+.location-card.is-active {
+  outline: 2px solid var(--pear, #d2e524);
+  box-shadow: 0 0 0 3px rgba(210, 229, 36, 0.25);
+  border-radius: 12px;
 }
 
 #map {
@@ -1478,21 +1561,11 @@ ________________________________________________________________________________
     line-height: 1.5;
   }
 }
-<<<<<<< HEAD
-________________________________________________________________________________________________________________________
 
-/* CSS para Comunidade */
+/* ============================================== Página Comunidade ================================================= */
 
-=======
-__________________________________________________________________________________________________________________________________________________________________________________
-
-/* CSS para Comunidade */
-
-/* CSS para Comunidade - COLE NO FINAL DO style.css */
-
->>>>>>> 30d0725cae9488f1deafff58a125ae70cefbcf0f
-#communities-banner.communities-banner-section {
-  background-image: url();
+#communities-hero.communities-hero-section {
+  background-image: url(/images/cover.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1503,29 +1576,31 @@ ________________________________________________________________________________
   width: 100%;
 }
 
-.communities-banner-container {
+.communities-hero-container {
   width: 100%;
 }
 
-.communities-banner-content {
+.communities-hero-content {
   padding: 60px 0;
   width: 100%;
 }
 
-.communities-banner-content h1 {
+.communities-hero-content h1 {
   font-family: var(--font-primary);
   font-size: 48px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 12px;
+  margin-left: 100px;
 }
 
-.communities-banner-content p {
+.communities-hero-content p {
   font-family: var(--font-primary);
   font-size: 18px;
   font-weight: 300;
   line-height: 1.875;
   max-width: 546px;
+  margin-left: 90px;
 }
 
 .communities-section {
@@ -1701,7 +1776,7 @@ a {
   gap: 6px;
 }
 
-/* Media query para comunidade */
+/*------------------------------------------ Media query para comunidade ---------------------------------------------*/
 @media (max-width: 768px) {
   .communities-banner-section {
     text-align: center;
@@ -1716,168 +1791,3 @@ a {
     gap: 40px;
   }
 }
-<<<<<<< HEAD
-=======
-
-/* CSS para a section:testimonials  */
-.testimonials-section {
-  background-color: var(--primary-color);
-  color: var(--text-light);
-  padding: 120px 0;
-}
-
-.testimonials-section .section-title,
-.testimonials-section .section-subtitle {
-  color: var(--text-light);
-}
-
-.testimonials-wrapper {
-  display: flex;
-  gap: 60px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.testimonial-card {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  max-width: 570px;
-}
-
-.testimonial-person {
-  width: 215px;
-  height: 239px;
-  object-fit: cover;
-  border-radius: 15px;
-  flex-shrink: 0;
-}
-
-.testimonial-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.testimonial-rating {
-  display: flex;
-  gap: 6px;
-}
-
-.testimonial-content blockquote {
-  font-size: 16px;
-  line-height: 28px;
-  font-style: normal;
-  margin: 0;
-}
-
-.testimonial-content cite {
-  font-weight: 600;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: -0.2px;
-  margin-top: 20px;
-}
-
-@media (max-width: 1200px) {
-  .testimonials-wrapper {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 600px) {
-  .testimonial-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .testimonial-rating {
-    justify-content: center;
-  }
-
-  .testimonials-section {
-    padding: 80px 0;
-  }
-}
-
-.testimonial-carousel {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonial-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-}
-
-.testimonial-slide {
-  display: flex;
-  justify-content: center;   /* centraliza os dois cards juntos */
-  align-items: stretch;
-  min-width: 100%;           /* cada slide ocupa toda a tela */
-  gap: 40px;
-  box-sizing: border-box;
-}
-
-.testimonial-card {
-  width: 45%;                 /* dois cards lado a lado */
-  max-width: 50%;
-  background: transparent;
-  padding: 20px;
-  display: flex;
-  align-items: center;        /* imagem e texto alinhados na vertical */
-  gap: 20px;
-}
-
-.testimonial-person {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 12px;
-  flex-shrink: 0;
-}
-
-.testimonial-content {
-  text-align: left;
-}
-
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--color-primary, #674695);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
-  width: 35px;
-}
-
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
-
-/* === MAPA (Leaflet) === */
-.map-container #map {
-  width: 100%;
-  height: clamp(360px, 60vh, 640px); /* responsivo */
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.locations-list {
-  max-height: clamp(360px, 60vh, 640px);
-  overflow: auto;
-}
-
-.location-card.is-active {
-  outline: 2px solid var(--pear, #D2E524);
-  box-shadow: 0 0 0 3px rgba(210,229,36,.25);
-  border-radius: 12px;
-}
->>>>>>> 30d0725cae9488f1deafff58a125ae70cefbcf0f
