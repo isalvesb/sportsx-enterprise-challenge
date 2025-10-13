@@ -57,7 +57,7 @@ if (track && prevBtn && nextBtn) {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
 
-  // Seus locais (coords aproximadas – ajuste quando tiver as coordenadas oficiais)
+  // Seus locais (coordenadass aproximadas – ajuste quando tiver as coordenadas oficiais)
   const places = [
     {
       id: '90-graus',
