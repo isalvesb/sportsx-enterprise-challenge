@@ -946,8 +946,7 @@ ________________________________________________________________________________
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 40px;
-  margin-top: 80px;
-  margin-left: 80px;
+  margin-top: 40px;
 }
 
 .search-container {
@@ -1479,10 +1478,19 @@ ________________________________________________________________________________
     line-height: 1.5;
   }
 }
+<<<<<<< HEAD
 ________________________________________________________________________________________________________________________
 
 /* CSS para Comunidade */
 
+=======
+__________________________________________________________________________________________________________________________________________________________________________________
+
+/* CSS para Comunidade */
+
+/* CSS para Comunidade - COLE NO FINAL DO style.css */
+
+>>>>>>> 30d0725cae9488f1deafff58a125ae70cefbcf0f
 #communities-banner.communities-banner-section {
   background-image: url();
   background-size: cover;
@@ -1708,3 +1716,168 @@ a {
     gap: 40px;
   }
 }
+<<<<<<< HEAD
+=======
+
+/* CSS para a section:testimonials  */
+.testimonials-section {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 120px 0;
+}
+
+.testimonials-section .section-title,
+.testimonials-section .section-subtitle {
+  color: var(--text-light);
+}
+
+.testimonials-wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  max-width: 570px;
+}
+
+.testimonial-person {
+  width: 215px;
+  height: 239px;
+  object-fit: cover;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.testimonial-content blockquote {
+  font-size: 16px;
+  line-height: 28px;
+  font-style: normal;
+  margin: 0;
+}
+
+.testimonial-content cite {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.2px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .testimonials-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-rating {
+    justify-content: center;
+  }
+
+  .testimonials-section {
+    padding: 80px 0;
+  }
+}
+
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-slide {
+  display: flex;
+  justify-content: center;   /* centraliza os dois cards juntos */
+  align-items: stretch;
+  min-width: 100%;           /* cada slide ocupa toda a tela */
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  width: 45%;                 /* dois cards lado a lado */
+  max-width: 50%;
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;        /* imagem e texto alinhados na vertical */
+  gap: 20px;
+}
+
+.testimonial-person {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  text-align: left;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-primary, #674695);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  width: 35px;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+/* === MAPA (Leaflet) === */
+.map-container #map {
+  width: 100%;
+  height: clamp(360px, 60vh, 640px); /* responsivo */
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.locations-list {
+  max-height: clamp(360px, 60vh, 640px);
+  overflow: auto;
+}
+
+.location-card.is-active {
+  outline: 2px solid var(--pear, #D2E524);
+  box-shadow: 0 0 0 3px rgba(210,229,36,.25);
+  border-radius: 12px;
+}
+>>>>>>> 30d0725cae9488f1deafff58a125ae70cefbcf0f
