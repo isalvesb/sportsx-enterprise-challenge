@@ -84,8 +84,7 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 ---
 
 ## 🚀 Tecnologias Utilizadas
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/HTML) → Desenvolvimento das telas <br>
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/CSS) → Desenvolvimento das telas <br>
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/CSS) → Desenvolvimento das telas <br>
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)](https://developer.mozilla.org/docs/Web/JavaScript) → Interações básicas <br>
 [![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat)](https://www.figma.com/) → Prototipagem visual <br>
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=flat)](https://github.com/isalvesb/sportsx-enterprise-challenge) → Versionamento e colaboração <br>
