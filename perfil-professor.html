@@ -7,7 +7,7 @@
     <title>Sports X</title>
 
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.io.png" type="image/png" />
+    <link rel="icon" href="images/favicon.io.webp" type="image/png" />
 
     <!-- Chamada google fonts -->
 
@@ -53,155 +53,176 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#section-hero">Página inicial</a></li>
+                    <li><a href="index.html#section-hero">Página inicial</a></li>
                     <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
                     <li><a href="professores-e-parceiros.html#section-teachers">Professores e Parceiros</a></li>
                     <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
-                    <li><a href="#section-sponsor">Seja um patrocinador</a></li>
-                    <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
+                    <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a>
+                    </li>
                 </ul>
             </nav>
 
-<!---------------------------------------------- Botão menu hamburguer  ------------------------------------------------>
+            <!---------------------------------------------- Botão menu hamburguer  ------------------------------------------------>
             <button class="hamburguer" aria-label="Abrir menu de navegação">
                 <i class="fa-solid fa-bars"></i>
             </button>
     </header>
 
-<!--================================================ Começo da página ================================================-->
-    <main id="section-profile" class="profile-section">
+<!--=================================================================== Começo da página ====================================================================-->
+    <section id="profile" class="profile-section">
         <div class="page-container">
-            <h1 class="section-title">Professores e Parceiros</h1>
-            <div class="profile-content-wrapper">
-                <div class="professor-carousel">
-                    <div class="professor-card">
-                        <img src="images/card-img-professor-capoeira.png" alt="Duas pessoas jogando capoeira">
+            <a href="professores-e-parceiros.html" class="back-link">
+                <i class="fa-solid fa-chevron-left"></i>
+                Ver todos os professores
+            </a>
+            <h1 class="profile-title">Professores e Parceiros</h1>
 
-                        <button class="carousel-arrow arrow-left" aria-label="Anterior">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </button>
-                        <button class="carousel-arrow arrow-right" aria-label="Próximo">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
+<!--===================================================================== José Maria - Capoeira =============================================================-->
 
-                        <div class="card-info">
-                            <h3 class="professor-name">José Maria</h3>
-                            <div class="professor-location">
-                                <i class="fa-solid fa-location-dot"></i>
-                                <span>Salvador - Bahia</span>
-                            </div>
+            <div class="professor-card">
+                <div class="professor-image-wrapper">
+                    <img src="images/card-img-professor-capoeira.webp" alt="Duas pessoas jogando capoeira"
+                        class="professor-image">
+                </div>
+
+                <div class="professor-details">
+                    <div class="professor-info">
+                        <h2 class="professor-name">José Maria</h2>
+                        <p class="professor-specialty">Professor de Capoeira</p>
+                    </div>
+
+                    <div class="professor-meta">
+                        <div class="meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Salvador - Bahia</span>
                         </div>
-                    </div>
-                </div>
 
-
-                <div class="sport-details">
-                    <div class="sport-rating">
-                        <i class="fa-solid fa-star"></i><span>5</span>
-                        <p class="rating-count">(127 avaliações)</p>
-                    </div>
-                    <h2 class="sport-name">Capoeira</h2>
-                    <div class="sport-tags">
-                        <span class="tag tag-dark">
-                            <i class="fa-solid fa-trophy"></i>
-                            <i class="fa-solid fa-trophy"></i>
-                            Intensidade
-                        </span>
-                        <span class="tag tag-light"><i class="fa-solid fa-bolt"></i>Adrenalina</span>
-                        <span class="tag tag-light"><i class="fa-solid fa-sun"></i>Ar livre</span>
-                    </div>
-
-                    <a href="#" class="cta-link">
-                        Contratar primeira aula grátis
-                        <i class="fa-solid fa-arrow-up-right-from-square arrow-up"></i>
-                    </a>
-                </div>
-
-                <div class="info-blocks">
-                    <article class="info-block">
-                        <h3>Sobre mim</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis minus suscipit ullam
-                            dignissimos voluptas dolorum illum, ab dolor cumque eligendi hic commodi veritatis
-                            voluptatem incidunt vel. Sunt dolorem eligendi repellendus consectetur assumenda,
-                            reiciendis, incidunt possimus, deleniti iure nesciunt nobis rerum.</p>
-                    </article>
-
-                    <article class="info-block">
-                        <h3>Sobre a aula de Capoeira</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eaque distinctio doloremque
-                            laudantium fugit esse officiis maxime, minima sapiente recusandae maiores inventore facere
-                            dolor autem deleniti modi facilis provident alias mollitia, necessitatibus molestias quae.
-                            Pariatur obcaecati voluptatum molestias placeat illum aut fuga porro quos aspernatur!
-                            Commodi dicta aliquam sit perspiciatis.</p>
-                    </article>
-
-                    <article class="info-block">
-                        <h3>Local de prática:</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, ipsum.</p>
-                    </article>
-                </div>
-
-                <section class="reviews-section">
-                    <div class="reviews-header">
-                        <h3>Avaliações</h3>
-                        <div class="overall-rating">
+                        <div class="meta-item rating">
                             <i class="fa-solid fa-star"></i>
-                            <span>5</span>
-                            <p>(127 avaliações)</p>
+                            <strong>5</strong>
+                            <span>(39 avaliações)</span>
                         </div>
                     </div>
 
-                    <div class="review-list">
-                        <article class="review-item">
-                            <div class="review-author">
-                                <h4>Carla Silva</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5</span>
-                                </div>
+                    <div class="professor-tags">
+                        <div class="tag-professor tag-dark">
+                            <div class="tag-icons">
+                                <i class="fa-solid fa-trophy"></i>
+                                <i class="fa-solid fa-trophy"></i>
                             </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, sint.</p>
-                        </article>
-
-                        <article class="review-item">
-                            <div class="review-author">
-                                <h4>Roberto P.</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5</span>
-                                </div>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, natus!</p>
-                        </article>
-
-                        <article class="review-item">
-                            <div class="review-author">
-                                <h4>Pedro R.</h4>
-                                <div class="review-rating">
-                                    <i class="fa-solid fa-star"></i>
-                                    <span>5</span>
-                                </div>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, natus!</p>
-                        </article>
+                            <span>Intensidade</span>
+                        </div>
+                        <div class="tag-professor tag-purple">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Adrenalina</span>
+                        </div>
+                        <div class="tag-professor tag-purple">
+                            <i class="fa-regular fa-sun"></i>
+                            <span>Ar livre</span>
+                        </div>
                     </div>
-                </section>
+                </div>
+            </div>
 
-                <div class="bottom-ctas">
-                    <a href="#" class="cta-link">
-                        Contratar primeira aula grátis
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
+            <hr class="section-divider">
 
-                    <a href="professores-e-parceiros.html" class="btn-ver-mais">Ver mais professores</a>
+<!--======================================================================== Sobres =========================================================================-->
 
+            <div class="about-grid">
+                <div class="about-column">
+                    <h3 class="about-title"><img src="images/decor.webp" alt="decorador"> Sobre a aula</h3>
+                    <p>As aulas combinam aquecimento, movimentos corporais, jogos em dupla, música e toques de berimbau.
+                        Cada encontro é uma oportunidade de desenvolver força, flexibilidade, coordenação e consciência
+                        corporal, tudo de forma divertida. Além da parte física, também exploramos a história da
+                        capoeira e sua importância como expressão cultural e social.</p>
+                </div>
+
+                <div class="about-column">
+                    <h3 class="about-title"><img src="images/decor.webp" alt="decorador"> Sobre mim</h3>
+                    <p>Sou professor de capoeira há mais de 12 anos e apaixonado por compartilhar essa arte que une
+                        movimento, ritmo e história. Meu objetivo é ensinar não apenas a técnica, mas também o respeito,
+                        a musicalidade e a cultura afro-brasileira que fazem parte da capoeira. Trabalho com alunos de
+                        todas as idades e níveis, sempre buscando criar um ambiente acolhedor, dinâmico e cheio de
+                        energia positiva.</p>
+                </div>
+            </div>
+
+<!--=================================================================== Locais de Prática ================================================================== -->
+            <div class="location-section">
+                <h3 class="location-title">Local de prática:</h3>
+                <p class="location-adress">
+                    <i class="fa-solid fa-map-pin"></i>
+                    Largo Terreiro de Jesus - Pelourinho, Salvador - BA, 40301-155
+                </p>
+
+                <div class="gallery-grid">
+                    <img src="images/card-locais-de-pratica-1.webp" alt="Pelourinho, centro histórico de Salvador - Bahia"
+                        class="gallery-image">
+                    <img src="images/card-locais-de-pratica-2.webp"
+                        alt="Casarões coloridos e rua de paralelepípedos, Pelourinho" class="gallery-image">
+                    <img src="images/card-locais-de-pratica-3.webp" alt="Roda de capoeira, dois jovens jogando capoeira"
+                        class="gallery-image">
+                </div>
+                <div class="cta-wrapper">
+                    <a href="#" class="cta-button">Combinar uma aula grátis</a>
                 </div>
             </div>
         </div>
-        </div>
-    </main>
+    </section>
 
-<!--==================================================== Rodapé ======================================================-->
+<!--======================================================================== Avaliações =====================================================================-->
+    <section id="rating" class="rating-section">
+        <div class="rating-container">
+            <div class="rating-header">
+                <h2 class="rating-title">Avaliação dos alunos</h2>
+                <div class="testimonials-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <span>5</span>
+                    <p>(39 avaliações)</p>
+                </div>
+            </div>
+            <div class="rating-grid">
+                <div class="rating-card">
+                    <div class="card-header">
+                        <span class="author">Carla Silva</span>
+                        <div class="author-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                        </div>
+                    </div>
+                    <p class="quote">“Professor incrível! As aulas são super dinâmicas e a energia é contagiante. Saio
+                        de cada treino me sentindo mais forte e confiante.”</p>
+                </div>
+
+                <div class="rating-card">
+                    <div class="card-header">
+                        <span class="author">Roberto Pires</span>
+                        <div class="author-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                        </div>
+                    </div>
+                    <p class="quote">“Comecei sem saber nada de capoeira e hoje já participo das rodas com segurança. O
+                        José tem muita paciência e explica tudo com clareza.”</p>
+                </div>
+
+                <div class="rating-card centered-card">
+                    <div class="card-header">
+                        <span class="author">Pedro Ramos</span>
+                        <div class="author-rating">
+                            <i class="fa-solid fa-star"></i><span>5</span>
+                        </div>
+                    </div>
+                    <p class="quote">“Ambiente leve e respeitoso, ótimo para quem quer aprender capoeira de verdade.
+                        Recomendo demais!”</p>
+                </div>
+            </div>
+            <div class="cta-wrapper">
+                <a href="#" class="cta-button">Combinar uma aula grátis</a>
+            </div>
+        </div>
+    </section>
+
+<!--========================================================================== Rodapé =======================================================================-->
     <footer id="section-footer" class="site-footer">
         <div class="container footer-main">
             <div class="footer-column footer-logo-column">
@@ -225,9 +246,11 @@
             <div class="footer-column">
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                        <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a>
+                        </li>
                         <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
-                        <li><a href="professores-e-parceiros.html#section-teachers">Professores e parceiros</a></li>
+                        <li><a href="professores-e-parceiros.html#section-teachers">Professores e
+                                parceiros</a></li>
                     </ul>
                 </nav>
             </div>
@@ -247,6 +270,8 @@
             </div>
         </div>
     </footer>
+
+<!-- =================================================================== JavaScript =========================================================================-->
     <script src="js/script.js"></script>
 </body>
 

@@ -2,15 +2,11 @@
   --primary-color: #3a2753;
   --secondary-color: #d2e524;
   --accent-color: #674695;
+  --accent-yellow: rgba(231, 242, 134, 0.5);
   --wisteria: #beacd8;
   --text-light: #ffffff;
   --text-dark: #3a2753;
   --bg-light-gray: #ece6f0;
-  --linear-gradient: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(58, 39, 83, 0.6) 100%
-  );
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Instrument Sans", sans-serif;
   --font-logo: "Outfit", sans-serif;

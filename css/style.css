@@ -60,6 +60,7 @@ body {
 .section-decorator {
   width: 48px;
   height: 48px;
+  gap: 10px;
 }
 
 .section-title-principal {
@@ -100,7 +101,7 @@ body {
   }
 }
 
-/*----------------------------------------------- CSS para a section:header ------------------------------------------*/
+/*------------------------------------------------------------------ CSS para a section:header --------------------------------------------------------------*/
 .site-header {
   background-color: var(--primary-color);
   padding: 7px 0;
@@ -242,10 +243,10 @@ body {
   }
 }
 
-/* ============================================ Página Inicial ====================================================== */
+/* ================================================================ Página Inicial ======================================================================= */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/background-mulher-escalando.png);
+    url(../images/background-mulher-escalando.webp);
   background-size: cover;
   background-position: center;
   min-height: 690px;
@@ -291,7 +292,7 @@ body {
   }
 }
 
-/*------------------------------------------------ CSS para a section:sports -----------------------------------------*/
+/*------------------------------------------------------------------ CSS para a section:sports --------------------------------------------------------------*/
 .sports-section {
   padding: 120px 0;
   position: relative;
@@ -402,10 +403,10 @@ body {
   }
 }
 
-/*----------------------------------------- CSS para a section:teachers  ---------------------------------------------*/
+/*-------------------------------------------------------------- CSS para a section:teachers  -------------------------------------------------------------*/
 .teachers-section {
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px 20px;
   background-color: #fdfdfd;
 }
 
@@ -589,16 +590,30 @@ body {
   }
 }
 
-/*------------------------------------------- CSS para a section:testimonials  ---------------------------------------*/
+/*---------------------------------------------------------- CSS para a section:testimonials  -------------------------------------------------------------*/
 .testimonials-section {
   background-color: var(--primary-color);
   color: var(--text-light);
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
-.testimonials-section .section-title,
-.testimonials-section .section-subtitle {
+.testimonials-section .section-title {
+  text-align: center;
   color: var(--text-light);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  margin: auto 20px;
+}
+
+.testimonials-section .section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--font-primary);
+  letter-spacing: -0.2px;
+  margin: auto;
 }
 
 .testimonials-wrapper {
@@ -686,20 +701,24 @@ body {
 
 .testimonial-slide {
   display: flex;
-  justify-content: center; /* centraliza os dois cards juntos */
+  justify-content: center;
+  /* centraliza os dois cards juntos */
   align-items: stretch;
-  min-width: 100%; /* cada slide ocupa toda a tela */
+  min-width: 100%;
+  /* cada slide ocupa toda a tela */
   gap: 40px;
   box-sizing: border-box;
 }
 
 .testimonial-card {
-  width: 45%; /* dois cards lado a lado */
+  width: 45%;
+  /* dois cards lado a lado */
   max-width: 50%;
   background: transparent;
   padding: 20px;
   display: flex;
-  align-items: center; /* imagem e texto alinhados na vertical */
+  align-items: center;
+  /* imagem e texto alinhados na vertical */
   gap: 20px;
 }
 
@@ -719,8 +738,8 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--color-primary, #674695);
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--text-light);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -732,11 +751,12 @@ body {
 .carousel-btn.prev {
   left: 10px;
 }
+
 .carousel-btn.next {
   right: 10px;
 }
 
-/* ----------------------------------------------- CSS para a section:sponsor ----------------------------------------*/
+/* --------------------------------------------------------------- CSS para a section:sponsor -------------------------------------------------------------*/
 .sponsor-section {
   padding: 120px 0;
   background-color: var(--text-light);
@@ -756,7 +776,7 @@ body {
   }
 }
 
-/*------------------------------------------------ CSS para a section:footer  ----------------------------------------*/
+/*------------------------------------------------------------------ CSS para a section:footer  -----------------------------------------------------------*/
 .site-footer {
   background-color: var(--primary-color);
   color: var(--text-light);
@@ -865,10 +885,11 @@ body {
   }
 }
 
-/* ========================================= Página Esporte-Descrição Sobre ==========================================*/
+/* ============================================================= Página Esporte-Descrição Sobre ===========================================================*/
 
-/*--------------------------------------- CSS para a section:sports-details ------------------------------------------*/
+/*------------------------------------------------------------- CSS para a section:sports-details ---------------------------------------------------------*/
 .sport-details-section {
+  margin: auto;
   padding: 80px 0;
 }
 
@@ -880,7 +901,7 @@ body {
 }
 
 .sport-visuals img {
-  width: 596px;
+  width: 100%;
   height: 396px;
   flex-shrink: 0;
 }
@@ -901,6 +922,8 @@ body {
 }
 
 .sport-info p {
+  display: flex;
+  width: 501px;
   font-size: 16px;
   line-height: 32px;
   color: var(--text-dark);
@@ -910,7 +933,7 @@ body {
 .tags-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 10px;
 }
 
 .tag {
@@ -920,24 +943,20 @@ body {
   padding: 8px 12px;
   background-color: var(--accent-color);
   color: var(--text-light);
-  border-radius: 10px;
+  border-radius: 14px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .tag.tag-adrenalina {
-  gap: 4px;
-}
-
-.tag i {
-  width: 14px;
-  height: 14px;
+  gap: 8px;
 }
 
 .tag .icon-group {
   position: relative;
   width: 36px;
   height: 14px;
+  gap: 10px;
 }
 
 .tag.tag-adrenalina .icon-group {
@@ -947,6 +966,7 @@ body {
 .tag .icon-group i {
   position: absolute;
   top: 0;
+  gap: 8px;
 }
 
 .tag .icon-group i:nth-child(1) {
@@ -976,7 +996,7 @@ body {
   }
 }
 
-/*--------------------------------- CSS para a section:teachers da página esportes -----------------------------------*/
+/*----------------------------------------------------- CSS para a section:teachers da página esportes ----------------------------------------------------*/
 .teachers-grid-esportes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1004,13 +1024,12 @@ body {
   padding: 120px 0;
 }
 
-/* =========================================== Página Perfil-Professor ============================================== */
+/* =========================================================== Página Professores e Parceiros ===============================================================*/
 
-/*----------------------------------------- CSS para a section:professors ------------------------------------------- */
+/*------------------------------------------------------------ CSS para a section:professors --------------------------------------------------------------- */
 .professors-section {
   padding-top: 60px;
   padding-bottom: 80px;
-  text-align: center;
 }
 
 .section-title {
@@ -1018,8 +1037,7 @@ body {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.2;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin: 0 80px 50px;
 }
 
 .search-container {
@@ -1031,6 +1049,8 @@ body {
 }
 
 .search-subtitle {
+  display: flex;
+  justify-content: center;
   color: var(--accent-color);
   font-weight: 600;
   font-size: 32px;
@@ -1040,7 +1060,7 @@ body {
 
 .search-form {
   display: flex;
-  align-items: center;
+  margin: 24px auto;
   background-color: var(--bg-light-gray);
   border-radius: 28px;
   padding: 4px;
@@ -1068,22 +1088,22 @@ body {
 .search-input::placeholder {
   color: var(--text-dark);
   opacity: 0.8;
+  text-align: start;
 }
 
 .search-button {
   display: flex;
   background-color: var(--primary-color);
-  color: var(--text-light);
+  border-radius: 28px;
+  color: var(--wisteria);
   border: none;
-  border-radius: 30px;
-  padding: 8px 16px;
   font-family: var(--font-primary);
   font-size: 16px;
-  font-weight: 300;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  text-align: center;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-right: 5px;
 }
 
 .search-button:hover {
@@ -1112,319 +1132,397 @@ body {
   }
 }
 
-/* =============================================== Página Perfil-Completo =========================================== */
+/* =================================================================== Página Perfil Professor ============================================================= */
 
-/*--------------------------------------------------- CSS para perfil ------------------------------------------------*/
-
+/*---------------------------------------------------------------------- CSS para perfil ------------------------------------------------------------------*/
 .profile-section {
-  padding: 58px 0px 120px;
+  padding: 85px0 100px;
+  background-color: var(--text-light);
 }
 
-.profile-content-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
+.back-link {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  margin: 51px 51px;
 }
 
-.professor-carousel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 24px;
-  width: 100%;
-  max-width: 500px;
+.profile-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0 0 80px 98px;
 }
 
 .professor-card {
-  width: 500px;
-  height: 500px;
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 16px;
   overflow: hidden;
-  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.professor-image-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  width: 250px;
+  height: 250px;
   flex-shrink: 0;
 }
 
-.professor-card img {
+.professor-image {
+  margin: auto;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
-  display: block;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(58, 39, 83, 0.6) 100%
+  );
 }
 
-.carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-light);
-  background: rgba(0, 0, 0, 0.5);
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  transition: background 0.3s ease;
-  z-index: 2;
-}
-
-.carousel-arrow:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.arrow-left {
-  left: 10px;
-}
-
-.arrow-right {
-  right: 10px;
-}
-
-.card-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  color: var(--text-light);
+.professor-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
-.professor-name {
-  font-family: var(--font-secondary);
-  font-size: 30px;
-  font-weight: 700;
+.professor-info .professor-name {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0 0 12px;
+  letter-spacing: -2px;
 }
 
-.professor-location {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 20px;
-}
-
-.sport-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  text-align: center;
-  width: 100%;
-  margin-bottom: 32px;
-}
-
-.sport-rating {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-family: var(--font-secondary);
-  font-size: 16px;
-  color: var(--text-dark);
-}
-
-.sport-name {
+.professor-info .professor-specialty {
   font-size: 24px;
   font-weight: 600;
   color: var(--accent-color);
-}
-
-.sport-tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-}
-
-.tag {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 12px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text-light);
-}
-
-.tag.tag-dark {
-  background-color: var(--primary-color);
-}
-.tag.tag-light {
-  background-color: var(--accent-color);
-}
-
-.cta-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin-top: 16px;
-  text-decoration: none;
-}
-
-.cta-link i {
-  transition: transform 0.3s ease, margin-left 0.3s ease;
-}
-
-.cta-link:hover {
-  color: var(--primary-color);
-}
-
-.cta-link:hover i {
-  transform: translateX(-5px);
-}
-
-.info-blocks {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  margin-top: 32px;
-  margin-bottom: 44px;
-}
-
-.info-block h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--accent-color);
-  margin-bottom: 12px;
-}
-
-.info-block p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text-dark);
-  margin-bottom: 8px;
-}
-
-.reviews-section {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 48px;
-}
-
-.reviews-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 36px;
-}
-
-.reviews-header h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--accent-color);
-}
-
-.overall-rating {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--font-secondary);
-  font-size: 16px;
-  color: var(--accent-color);
-}
-
-.overall-rating span {
-  font-family: var(--font-secondary);
-  font-size: 16px;
-}
-
-.overall-rating p {
   margin: 0;
-  font-family: var(--font-secondary);
+}
+
+.professor-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--accent-color);
   font-size: 16px;
 }
 
-.review-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.review-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.review-author {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.review-author h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.review-rating {
-  display: flex;
-  align-items: center;
+.meta-item.rating {
   gap: 5px;
+}
+
+.meta-item.rating strong {
   font-family: var(--font-secondary);
-  font-size: 14px;
-  color: var(--text-dark);
+  font-weight: 500;
 }
 
-.review-item p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text-dark);
+.meta-item.rating span {
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
-.bottom-ctas {
+.professor-tags {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 48px;
-  margin-top: 24px;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+.tag-professor {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 14px;
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag-dark {
+  background-color: var(--primary-color);
+  gap: 8px;
+}
+
+.tag-purple {
+  background-color: var(--accent-color);
+  gap: 4px;
+}
+
+.tag-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.section-divider {
+  display: block;
+  width: calc(100vw - 160px);
+  max-width: 1400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  height: 1px;
+  background-color: var(--wisteria);
+  margin: 50px 0;
+}
+
+/*----------------------------------------------------------------------- CSS para seção Sobre --------------------------------------------------------------*/
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  padding: 54px 69px 0;
+}
+
+.about-column .about-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0 0 12px;
+  letter-spacing: -2px;
+}
+
+.about-column img {
+  width: 28px;
+  height: 28px;
+  aspect-ratio: 1/1;
+}
+
+.about-column p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------- CSS para seção Locais --------------------------------------------------------------*/
+.location-section {
+  padding-top: 93px;
+  padding-left: 69px;
+  padding-right: 69px;
+}
+
+.location-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0 0 13px;
+  letter-spacing: -2px;
+}
+
+.location-adress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  margin: 0 0 60px;
+}
+
+.gallery-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 27px;
+  margin: auto 60px;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+
+.gallery-image {
+  width: 312px;
+  height: 312px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cta-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 8px;
+  margin-top: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+.cta-wrapper {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
   .profile-section {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    padding: 40px 0 60px;
   }
 
-  .section-title {
+  .profile-title {
     font-size: 36px;
-    text-align: center;
     margin-bottom: 40px;
   }
 
-  .professor-carousel {
-    gap: 8px;
-  }
-
   .professor-card {
-    width: 280px;
-    height: 280px;
-  }
-
-  .info-block,
-  .reviews-section {
-    text-align: center;
-  }
-
-  .reviews-header {
     flex-direction: column;
-    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    padding: 40px 0 0;
+  }
+
+  .location-section {
+    padding: 60px 0 0;
   }
 }
 
-/* =================================================== Página Onde Praticar ========================================= */
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 32px;
+  }
+  .professor-image-wrapper {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* ------------------------------------------------------------------- CSS para seção de avaliações ---------------------------------------------------------*/
+.rating-section {
+  padding: 100px 0;
+  background-color: var(--text-light);
+}
+
+.rating-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 48px;
+}
+
+.rating-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin: 0;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+.testimonials-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.testimonials-rating p {
+  margin: 0;
+}
+
+.rating-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 54px 32px;
+  margin: auto 60px;
+}
+
+.rating-card {
+  background-color: var(--accent-yellow);
+  border-radius: 16px;
+  padding: 24px;
+  gap: 10px;
+  box-shadow: 0px 4px 10.1px 0px rgba(0, 0, 0, 0.08);
+}
+
+.centered-card {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
+  max-width: 499px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.author {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.author-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.rating-section .cta-wrapper {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .rating-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .centered-card {
+    width: 100%;
+    grid-column: auto;
+  }
+}
+
+/* ======================================================================= Página Onde Praticar ============================================================ */
 
 .map-search-section {
   padding-top: 114px;
@@ -1433,28 +1531,36 @@ body {
 }
 
 .map-content-wrapper {
+  display: flex;
   margin: 80px 100px 71px 75px;
   display: grid;
   grid-template-columns: 700px 1fr;
   gap: 75px;
-  align-items: start;
+  align-items: center;
+  justify-content: center;
 }
 
-/* ------------------------------------------------- MAPA (Leaflet) ------------------------------------------------- */
+/* ------------------------------------------------------------------------- MAPA (Leaflet) ---------------------------------------------------------------- */
 .map-container #map {
+  position: relative;
   width: 100%;
-  height: clamp(360px, 60vh, 640px); /* responsivo */
+  height: clamp(360px, 60vh, 640px);
+  /* responsivo */
   border-radius: 16px;
   overflow: hidden;
+  margin: auto;
 }
 
 .locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
   max-height: clamp(360px, 60vh, 640px);
   overflow: auto;
 }
 
 .location-card.is-active {
-  outline: 2px solid var(--pear, #d2e524);
+  outline: 2px solid var(--secondary-color);
   box-shadow: 0 0 0 3px rgba(210, 229, 36, 0.25);
   border-radius: 12px;
 }
@@ -1469,12 +1575,6 @@ body {
   background: #ddd !important;
   z-index: 5 !important;
   display: block !important;
-}
-
-.locations-list {
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
 }
 
 .location-card {
@@ -1562,10 +1662,10 @@ body {
   }
 }
 
-/* ============================================== Página Comunidade ================================================= */
+/* =================================================================== Página Comunidade =================================================================== */
 
 #communities-hero.communities-hero-section {
-  background-image: url(/images/cover.png);
+  background-image: url(/images/capa-comunidade.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1776,7 +1876,7 @@ a {
   gap: 6px;
 }
 
-/*------------------------------------------ Media query para comunidade ---------------------------------------------*/
+/*----------------------------------------------------------------- Media query para comunidade -------------------------------------------------------------*/
 @media (max-width: 768px) {
   .communities-banner-section {
     text-align: center;
@@ -1790,4 +1890,340 @@ a {
   .communities-grid {
     gap: 40px;
   }
+}
+
+/*================================================================== Página Seja um Patrocinador ==========================================================*/
+#sponsor.sponsor-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 140px 24px;
+  min-height: 550px;
+  color: var(--text-light);
+  background: linear-gradient(
+      180deg,
+      rgba(58, 39, 83, 0) 0%,
+      rgba(58, 39, 83, 0.7) 50.12%
+    ),
+    url("../images/image_background_seja_patrocinador.webp") no-repeat center
+      center;
+  background-size: cover;
+}
+
+.sponsor-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 616px;
+}
+
+.sponsor-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sponsor-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .sponsor-hero {
+    padding: 100px 24px;
+    min-height: 450px;
+  }
+
+  .sponsor-title {
+    font-size: 36px;
+  }
+}
+
+.btn-sponsor {
+  display: flex;
+  width: 208px;
+  height: 48px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  margin: auto;
+}
+
+.btn-hero-cta {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+}
+
+.btn-hero-cta:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.advantages {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.advantages-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 616px;
+  margin: 0 auto 32px;
+  gap: 16px;
+}
+
+.advantages-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: var(--accent-color);
+}
+
+.advantages-subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+.advantages-grid {
+  display: flex;
+  grid-template-columns: repeat(3 1fr);
+  gap: 35px;
+  justify-content: center;
+  margin: 32px auto 60px;
+}
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.advantage-card-image {
+  width: 100%;
+  max-width: 304px;
+  height: 227px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.advantage-card-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.48px;
+  color: var(--accent-color);
+}
+
+.advantage-card-text {
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 315px;
+}
+
+.advantages-cta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 992px) {
+  .advantages-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.recognition {
+  padding: 120px 0;
+}
+
+.recognition-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.recognition-text-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px 10px;
+  max-width: 543px;
+}
+
+.recognition-title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: var(--accent-color);
+}
+
+.recognition-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recognition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recognition-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.recognition-list-item i {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  aspect-ratio: 1/1;
+}
+
+.recognition-image-wrapper {
+  flex: 1;
+  max-width: 551px;
+}
+
+.recognition-image-wrapper img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 992px) {
+  .recognition-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .recognition-text-content {
+    max-width: 100%;
+  }
+}
+
+.contact {
+  padding-bottom: 120px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 50px auto 16px;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  max-width: 480px;
+  padding: 16px 32px;
+  border: 0.8px solid var(--wisteria);
+  border-radius: 14px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 0.8px solid var(--wisteria);
+  border-radius: 10px;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  background-color: var(--text-light);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b3b3b3;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 68px;
+}
+
+.contact-form-btn {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 40px 16px 40px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.contact-form-btn:active {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
 }

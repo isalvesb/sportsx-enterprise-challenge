@@ -7,7 +7,7 @@
     <title>Sports X</title>
 
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.io.png" type="image/png" />
+    <link rel="icon" href="images/favicon.io.webp" type="image/png" />
 
     <!-- Chamada google fonts -->
 
@@ -62,7 +62,7 @@
                     <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
                     <li><a href="professores-e-parceiros.html#section-teachers">Professores e Parceiros</a></li>
                     <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
-                    <li><a href="#section-sponsor">Seja um patrocinador</a></li>
+                    <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
                     <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
             </nav>
@@ -73,26 +73,27 @@
             </button>
     </header>
 
+<!--=================================================================== Começo da Página ====================================================================-->
     <section id="map-search" class="map-search-section">
-        <div class="container">
-            <div class="section-header">
+        <div class="container-onde-praticar">
+            <div class="map-header">
                 <h1 class="section-title">Onde praticar</h1>
                 <p class="search-subtitle">+ de 147 locais para você praticar seu esporte favorito</p>
 
                 <form action="" class="search-form">
-                    <input type="text" class="search-input" placeholder="Escalada São Paulo">
+                    <input type="text" class="search-input" placeholder="escalada são paulo">
                     <button type="submit" class="search-button">Buscar</button>
                 </form>
             </div>
 
             
             <div class="map-content-wrapper">
-                <!-- Mapa -->
+                <!---------------------- Mapa ----------------------->
                 <div class="map-container">
                     <div id="map"></div>
                 </div>
 
-<!--===================================================== Locais  ====================================================-->
+<!--====================================================================== Locais ===========================================================================-->
                 <aside class="locations-list">
                     <article class="location-card" data-id="90-graus">
                         <h3 class="location-name">
@@ -141,7 +142,7 @@
         </div>
     </section>
 
- <!--===================================================== Rodapé ====================================================-->
+ <!--===================================================================== Rodapé ===========================================================================-->
     <footer id="section-footer" class="site-footer">
         <div class="container footer-main">
             <div class="footer-column footer-logo-column">
@@ -165,12 +166,13 @@
             <div class="footer-column">
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="#section-sponsor">Seja um patrocinador</a></li>
-                        <li><a href="#section-testimonials">Comunidade</a></li>
+                        <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
+                        <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
                         <li><a href="professores-e-parceiros.html#section-teachers">Professores e parceiros</a></li>
                     </ul>
                 </nav>
             </div>
+
             <div class="footer-column">
                 <h6 class="footer-heading">Redes sociais</h6>
                 <div class="social">
@@ -189,7 +191,7 @@
     </footer>
 
 
-    <!--================================================== Leaflet JS ================================================-->
+<!--==================================================================== Leaflet JS =========================================================================-->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
         </script>
