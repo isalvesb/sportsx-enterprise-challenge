@@ -8,6 +8,23 @@ O SportsX nasce com o propósito de dar voz aos esportes invisibilizados, criand
 
 ---
 
+## 🎬 Pitch da Ideia
+
+<p align="center">
+  <a href="https://youtu.be/KkuGn9LqyQM" target="_blank">
+    <img src="https://img.youtube.com/vi/KkuGn9LqyQM/maxresdefault.jpg" 
+         alt="Pitch da SportsX" 
+         width="80%" 
+         style="border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.3);" />
+  </a>
+</p>
+
+<p align="center">
+  ▶️ <a href="https://youtu.be/KkuGn9LqyQM" target="_blank"><strong>Assistir ao Pitch no YouTube</strong></a>
+</p>
+
+---
+
 ## 🎯 Contexto e Proposta
 - **Contexto:** O esporte é uma das maiores formas de integração social, mas muitos permanecem invisibilizados.  
 - **Proposta:** Criar uma plataforma que dê espaço para modalidades pouco divulgadas, aproximando atletas, fãs e comunidades.  
@@ -84,3 +101,6 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 - **Mirna L Marinho Carneiro Andrade** – Arquitetura & Design no Figma
 
 ---
+
+
+
