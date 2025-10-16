@@ -92,8 +92,7 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 
 ---
 
-## 👥 Equipe
-## 👩‍💻 Equipe SportsX
+## 👥 Equipe SportsX
 
 <p align="center">
   <table>
