@@ -93,11 +93,43 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 ---
 
 ## 👥 Equipe
-- **Guilherme Victor Cunha de Souza** – JavaScript & Documentação  
-- **Isamara Alves de Brito** – Desenvolvimento HTML & CSS  
-- **Kauane Cristiny Bomfim Silva Cavalcante** – Desenvolvimento HTML & CSS  
-- **Matheus Dias Gomes Silva** – Pesquisa & Vídeo Pitch  
-- **Mirna L Marinho Carneiro Andrade** – Arquitetura & Design no Figma
+## 👩‍💻 Equipe SportsX
+
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/a5841471-d1b8-41dd-bd34-05d9c5bbe35c"
+width="100" style="border-radius:50%;" alt="Guilherme Victor"/><br>
+        <b>Guilherme Victor Cunha de Souza</b><br>
+        ⚙️ JavaScript & Documentação
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/a9f19099-bc27-4159-a88d-ef34750282bb"
+ width="100" style="border-radius:50%;" alt="Isa Alves"/><br>
+        <b>Isamara Alves de Brito</b><br>
+        👩‍💻 Desenvolvimento HTML & CSS
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/6a50a390-8c52-44f0-88d5-d97ee6b75fa7"
+width="100" style="border-radius:50%;" alt"Kauane Cristiny"><br>
+        <b>Kauane Cristiny Bomfim Silva Cavalcante</b><br>
+        👩‍💻 Desenvolvimento HTML & CSS
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/92c9d59e-1cd5-4b4a-9323-f9932095d149" width="100" style="border-radius:50%;" alt="Matheus Dias"><br>
+        <b>Matheus Dias Gomes Silva</b><br>
+        📹 Pesquisa & Vídeo Pitch
+      </td>
+      <td align="center">
+        <img src="https://github.com/user-attachments/assets/71e918e3-a1d3-4225-9475-3391182bfb6a" width="100" style="border-radius:50%;"
+        alt="Mirna Marinho"><br>
+        <b>Mirna L. Marinho Carneiro Andrade</b><br>
+        🎨 Arquitetura & Design no Figma
+      </td>
+    </tr>
+  </table>
+</p>
 
 ---
 
