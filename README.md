@@ -129,7 +129,7 @@ width="100" style="border-radius:50%;" alt"Kauane Cristiny"><br>
            <a href="https://www.linkedin.com/in/kauanecavalcante" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-%23beacd8?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
 </a>
-         <a href="https://github.com/isalvesb" target="_blank">
+         <a href="https://github.com/kaucavalcante" target="_blank">
           <img src="https://img.shields.io/badge/GitHub-%23beacd8?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
         </a>
       </td>
@@ -140,7 +140,7 @@ width="100" style="border-radius:50%;" alt"Kauane Cristiny"><br>
            <a href="https://www.linkedin.com/in/matheus-dias" target="_blank">
   <img src="https://img.shields.io/badge/LinkedIn-%23D2E524?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
 </a>
-        <a href="https://github.com/isalvesb" target="_blank">
+        <a href="" target="_blank">
           <img src="https://img.shields.io/badge/GitHub-%23D2E524?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
         </a>
       </td>
