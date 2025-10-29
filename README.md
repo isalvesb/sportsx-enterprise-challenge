@@ -101,30 +101,60 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
         <img src="https://github.com/user-attachments/assets/a5841471-d1b8-41dd-bd34-05d9c5bbe35c"
 width="100" style="border-radius:50%;" alt="Guilherme Victor"/><br>
         <b>Guilherme Victor Cunha de Souza</b><br>
-        ⚙️ JavaScript & Documentação
+        ⚙️ JavaScript & Documentação <br>
+        <a href="https://www.linkedin.com/in/guicunhasou/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%23674695?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+        <a href="https://github.com/guicunhasou/" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%23674695?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
+        </a>
       </td>
       <td align="center">
         <img src="https://github.com/user-attachments/assets/a9f19099-bc27-4159-a88d-ef34750282bb"
  width="100" style="border-radius:50%;" alt="Isa Alves"/><br>
         <b>Isamara Alves de Brito</b><br>
-        👩‍💻 Desenvolvimento HTML & CSS
+        👩‍💻 Desenvolvimento HTML & CSS <br>
+        <a href="https://www.linkedin.com/in/isalvesb/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%233a2753?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+        <a href="https://github.com/isalvesb" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%233a2753?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
+        </a>
       </td>
       <td align="center">
         <img src="https://github.com/user-attachments/assets/6a50a390-8c52-44f0-88d5-d97ee6b75fa7"
 width="100" style="border-radius:50%;" alt"Kauane Cristiny"><br>
         <b>Kauane Cristiny Bomfim Silva Cavalcante</b><br>
-        👩‍💻 Desenvolvimento HTML & CSS
+        👩‍💻 Desenvolvimento HTML & CSS <br>
+           <a href="https://www.linkedin.com/in/kauanecavalcante" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%23beacd8?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+         <a href="https://github.com/isalvesb" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%23beacd8?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
+        </a>
       </td>
       <td align="center">
         <img src="https://github.com/user-attachments/assets/92c9d59e-1cd5-4b4a-9323-f9932095d149" width="100" style="border-radius:50%;" alt="Matheus Dias"><br>
         <b>Matheus Dias Gomes Silva</b><br>
-        📹 Pesquisa & Vídeo Pitch
+        📹 Pesquisa & Vídeo Pitch <br>
+           <a href="https://www.linkedin.com/in/matheus-dias" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%23D2E524?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+        <a href="https://github.com/isalvesb" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%23D2E524?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
+        </a>
       </td>
       <td align="center">
         <img src="https://github.com/user-attachments/assets/71e918e3-a1d3-4225-9475-3391182bfb6a" width="100" style="border-radius:50%;"
         alt="Mirna Marinho"><br>
         <b>Mirna L. Marinho Carneiro Andrade</b><br>
-        🎨 Arquitetura & Design no Figma
+        🎨 Arquitetura & Design no Figma <br>
+           <a href="https://www.linkedin.com/in/amimarinho" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%233a2753?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+</a>
+        <a href="http://github.com/amimarinho" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-%233a2753?style=flat&logo=github&logoColor=white" alt="GitHub Badge" />
+        </a>
       </td>
     </tr>
   </table>
